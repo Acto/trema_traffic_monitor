@@ -1,0 +1,11 @@
+[
+    {
+        "src": 1,
+        "dst": 2,
+        "route_packets": 10000
+    },{
+        "src": 2,
+        "dst": 1,
+        "route_packets": 10000
+    }
+]
