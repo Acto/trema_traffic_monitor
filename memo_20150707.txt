@@ -1,0 +1,19 @@
+<source>
+  type tail
+  path /var/log/messages
+  format syslog
+  tag td.syslog
+  pos_file /var/log/td-agent/syslog_messages.pos
+  home
+</source>
+<match td.**>
+  type stdout
+</match>
+
+syslog解析
+https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0CDYQFjAD&url=http%3A%2F%2Fblog.youyo.info%2Fblog%2F2014%2F11%2F14%2Ftd-agent-syslog%2F&ei=Dp-aVaOpHITKmAWI5IfQAw&usg=AFQjCNE0-fsANnYeSP2j5JYNp7pRLcrCsg&sig2=HKP0KDf82imDYmKyyXgOyQ
+http://changineer.info/server/logging/linux_rsyslogd.html
+http://y-ken.hatenablog.com/entry/fluentd-syslog-permission
+http://docs.fluentd.org/articles/ruby#
+http://blog.glidenote.com/blog/2012/07/15/fluentd-regex-debug/
+http://osdn.jp/magazine/14/10/30/090000/2
